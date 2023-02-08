@@ -1,6 +1,8 @@
 //SaveLoad.kt
 //enthält Funktionen für das Speichern und Laden von Dateien
 
+@file:Suppress("DuplicatedCode", "DuplicatedCode")
+
 import java.io.File
 
 

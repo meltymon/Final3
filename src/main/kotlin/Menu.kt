@@ -38,7 +38,7 @@ class Menu {
         println("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *")
     }
     // Zeigt die Details der Spieler und Gegner an
-    fun showDetails() {
+    private fun showDetails() {
         println("* * * * * * * * * * * * * * * * * *")
         println("\nDetails der Spieler:")
         for (player in cc.players) {

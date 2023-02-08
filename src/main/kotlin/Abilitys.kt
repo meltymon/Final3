@@ -1,2 +1,2 @@
-class Abilitys {
-}
+@Suppress("unused", "unused")
+class Abilitys

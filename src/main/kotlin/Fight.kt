@@ -10,7 +10,7 @@ class Fight {
     fun fight(players: ArrayList<Player>, enemys: ArrayList<Enemy>) {
         for (player in players) {
             for (enemy in enemys) {
-                println("\nRunde ${4 - player.leben}")
+                println("\nRunde ${8 - player.leben}")
                 println("Der Kampf zwischen ${player.name} und ${enemy.name} beginnt!")
 
                 while (player.hp > 0 && enemy.hp > 0) {
@@ -47,7 +47,7 @@ class Fight {
 
     }
 
-    fun calculateDamage(strength: Int, defense: Int): Int {
+    private fun calculateDamage(strength: Int, defense: Int): Int {
         // Generiert zufällig Stärke und Verteidigung
         //generateRandomStrengthAndDefense()
         return strength - defense

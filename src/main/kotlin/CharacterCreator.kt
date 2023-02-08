@@ -37,13 +37,13 @@ class CharacterCreator {
 
     }
     // Liest den Namen des Spielers ein
-    fun readName(): String {
+    private fun readName(): String {
         print("Bitte geben Sie den Namen des Characters ein: ")
         return readlnOrNull() ?: ""
     }
 
     // Generiert den Namen des Gegners
-    fun generateName(): String {
+    private fun generateName(): String {
         val adjectives = listOf("Böser ", "Mutiger ", "Starker ", "Furchtloser ", "Hinterhältiger ")
         val nouns = listOf("Ork", "Elf", "Zwerg", "Mensch", "Untoter")
         val adjective = adjectives.random()

@@ -1,7 +1,7 @@
 import kotlin.random.Random
 
 open class Config {
-    var anzahlLeben = 4
+    var anzahlLeben = 7
     var playerHp = Random.nextInt(100, 2000)
     var playerStrength = Random.nextInt(200, 250)
     var playerDefense = Random.nextInt(10, 200)

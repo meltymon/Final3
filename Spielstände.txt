@@ -1,26 +1,22 @@
 Spieler:
-Name: Chris
-Lebensanzeige: 1907
-Stärke: 210
-Verteidigung: 55
-Anzahl Leben: 7
-Name: Kevin
-Lebensanzeige: 202
-Stärke: 203
-Verteidigung: 183
-Anzahl Leben: 7
-Name: Rainer
-Lebensanzeige: 871
-Stärke: 237
+Name: CHris
+Lebensanzeige: 1381
+Stärke: 226
 Verteidigung: 120
-Anzahl Leben: 7
+Anzahl Leben: 4
+Name: Kevin
+Lebensanzeige: 277
+Stärke: 207
+Verteidigung: 195
+Anzahl Leben: 4
+Name: Rainer
+Lebensanzeige: 1585
+Stärke: 238
+Verteidigung: 67
+Anzahl Leben: 4
 
 Gegner:
-Name: Mutiger Ork
-Lebensanzeige: 1040
-Stärke: 653
-Verteidigung: 174
 Name: Mutiger Mensch
-Lebensanzeige: 1224
-Stärke: 955
-Verteidigung: 187
+Lebensanzeige: 1776
+Stärke: 830
+Verteidigung: 196
