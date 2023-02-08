@@ -1,3 +1,35 @@
 Spieler:
+Name: Chris
+Lebensanzeige: 415
+Stärke: 242
+Verteidigung: 19
+Anzahl Leben: 6
+Name: Chris
+Lebensanzeige: 147
+Stärke: 238
+Verteidigung: 87
+Anzahl Leben: 7
+Name: Kevin
+Lebensanzeige: 1822
+Stärke: 212
+Verteidigung: 124
+Anzahl Leben: 7
+Name: Rainer
+Lebensanzeige: 561
+Stärke: 233
+Verteidigung: 142
+Anzahl Leben: 7
 
 Gegner:
+Name: Hinterhältiger Ork
+Lebensanzeige: -44
+Stärke: 795
+Verteidigung: 158
+Name: Furchtloser Ork
+Lebensanzeige: 1970
+Stärke: 651
+Verteidigung: 154
+Name: Böser Mensch
+Lebensanzeige: 877
+Stärke: 982
+Verteidigung: 183

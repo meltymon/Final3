@@ -3,7 +3,7 @@
 // enthält das Programm und die Hauptfunktionalität
 
 class CharacterCreator {
-    private var cc = Config()
+    private var config = Config()
     val players = ArrayList<Player>()
     val enemies = ArrayList<Enemy>()
 
@@ -16,9 +16,24 @@ class CharacterCreator {
             input.toInt()
         } catch (e: NumberFormatException) {
             println("Du hast eine Falsche eingabe gemacht,Versuche es Erneut")
-            cc.schlaf("Game")
-            0
+            config.schlaf("Game")
+            readOption()
         }
+
+    }
+    fun createPlayer() {
+        //Eingabe des Spieler namen
+        val player = Player()
+        player.name = readName()
+        players.add(player)
+    }
+
+    // Erstellt den Gegner
+    fun createEnemy() {
+        //Generierter Gegner name
+        val enemy = Enemy()
+        enemy.name = generateName()
+        enemies.add(enemy)
 
     }
     // Liest den Namen des Spielers ein
@@ -34,15 +49,15 @@ class CharacterCreator {
         val adjective = adjectives.random()
         val noun = nouns.random()
         println("Der Gegner Heißt '${adjective}${noun}'")
-        cc.schlaf("Game")
+        config.schlaf("Game")
         return "$adjective$noun"
     }
 
-    fun calculateDamage(strength: Int, defense: Int): Int {
+    /*fun calculateDamage(strength: Int, defense: Int): Int {
         // Generiert zufällig Stärke und Verteidigung
         //generateRandomStrengthAndDefense()
         return strength - defense
-    }
+    }*/
 }
 
 

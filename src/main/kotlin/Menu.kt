@@ -1,9 +1,9 @@
 class Menu {
 
     private var cc =CharacterCreator()
-    private var cb= InteractiveMenu()
-    private var ca= SaveLoad()
-    private var cf= Fight()
+    private var saveload= SaveLoad()
+    private var fight= Fight()
+    private var config=Config()
 
     fun run() {
         // Willkommensnachricht anzeigen
@@ -14,12 +14,12 @@ class Menu {
         while (true) {
             showMenu()
             when (cc.readOption()) {
-                1 -> cb.createPlayer()
-                2 -> cb.createEnemy()
-                3 -> cb.showDetails()
-                4 -> cf.fight()
-                5 -> ca.saveCharacters(cc.players, cc.enemies)
-                6 -> ca.loadCharacters()
+                1 -> cc.createPlayer()
+                2 -> cc.createEnemy()
+                3 -> showDetails()
+                4 -> fight.fight(cc.players,cc.enemies)
+                5 -> saveload.saveCharacters(cc.players, cc.enemies)
+                6 -> cc=saveload.loadCharacters()
                 7 -> break
             }
         }
@@ -36,5 +36,29 @@ class Menu {
         println("* 6 = Laden der Spieler und Gegner                                *")
         println("* 7 = Programm Beenden                                            *")
         println("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *")
+    }
+    // Zeigt die Details der Spieler und Gegner an
+    fun showDetails() {
+        println("* * * * * * * * * * * * * * * * * *")
+        println("\nDetails der Spieler:")
+        for (player in cc.players) {
+            println("Name: ${player.name}")
+            println("Lebensanzeige: ${player.hp}")
+            println("Stärke: ${player.strength}")
+            println("Verteidigung: ${player.defense}")
+            println("Anzahl Leben: ${player.leben}")
+            println()
+
+        }
+        config.schlaf("Game")
+        println("\nDetails der Gegner:")
+        for (enemy in cc.enemies) {
+            println("Name: ${enemy.name}")
+            println("Lebensanzeige: ${enemy.hp}")
+            println("Stärke: ${enemy.strength}")
+            println("Verteidigung: ${enemy.defense}")
+            println()
+        }
+
     }
 }

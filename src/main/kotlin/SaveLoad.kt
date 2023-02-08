@@ -5,13 +5,13 @@ import java.io.File
 
 
 class SaveLoad {
-private var cc=Config()
-    private var cb=CharacterCreator()
+    private var config=Config()
+
     // Speichert die Details der Spieler und Gegner
     fun saveCharacters(players: ArrayList<Player>, enemies: ArrayList<Enemy>) {
         // Ausgabe der Speichermeldung
         println("Speichern der Spieler und Gegner in Spielstände.txt")
-        cc.schlaf("Game")
+        config.schlaf("Game")
 
         // Öffnen einer Datei zum Schreiben
         val file = File("Spielstände.txt")
@@ -40,10 +40,11 @@ private var cc=Config()
     }
 
     // Lädt die Details der Spieler und Gegner
-    fun loadCharacters() {
+    fun loadCharacters():CharacterCreator {
+        val cc=CharacterCreator()
         // Ausgabe der Lade Meldung
         println("Laden der Spieler und Gegner aus Spielstände.txt")
-        cc.schlaf("Game")
+        config.schlaf("Game")
 
         // Öffnen einer Datei zum Lesen
         val file = File("Spielstände.txt")
@@ -51,29 +52,29 @@ private var cc=Config()
 
         // Spieler details Laden
         var i = 1
-        while (lines[i] != "\nGegner:") {
+        while (lines[i+1] != "Gegner:") {
             val player = Player()
             player.name = lines[i].removePrefix("Name: ")
             player.hp = lines[i + 1].removePrefix("Lebensanzeige: ").toInt()
             player.strength = lines[i + 2].removePrefix("Stärke: ").toInt()
             player.defense = lines[i + 3].removePrefix("Verteidigung: ").toInt()
             player.leben = lines[i + 4].removePrefix("Anzahl Leben: ").toInt()
-            cb.players.add(player)
+            cc.players.add(player)
             i += 5
         }
 
         // Gegner details Laden
-        i++
+        i+=2
         while (i < lines.size) {
             val enemy = Enemy()
             enemy.name = lines[i].removePrefix("Name: ")
             enemy.hp = lines[i + 1].removePrefix("Lebensanzeige: ").toInt()
             enemy.strength = lines[i + 2].removePrefix("Stärke: ").toInt()
             enemy.defense = lines[i + 3].removePrefix("Verteidigung: ").toInt()
-            cb.enemies.add(enemy)
+            cc.enemies.add(enemy)
             i += 4
         }
-
+return cc
 
     }
 

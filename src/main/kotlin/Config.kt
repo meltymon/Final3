@@ -1,7 +1,7 @@
 import kotlin.random.Random
 
 open class Config {
-    var anzahlLeben=7
+    var anzahlLeben = 7
     var playerHp = Random.nextInt(100, 2000)
     var playerStrength = Random.nextInt(200, 250)
     var playerDefense = Random.nextInt(10, 200)
@@ -11,12 +11,26 @@ open class Config {
     var enemyDefense = Random.nextInt(150, 200)
 
     //Funktion Schlaf zum Delay Setzen
-    fun schlaf(typ:String){
-        when (typ){
-            "Menu"-> Thread.sleep(1800)
+    fun schlaf(typ: String) {
+        when (typ) {
+            "Menu" -> Thread.sleep(1800)
             "Game" -> Thread.sleep(1000)
-            "Continue" -> Thread.sleep(2400)}}
+            "Continue" -> Thread.sleep(2400)
+        }
+    }
+
+    // Verzögert die Ausführung
+    private fun sleep(game: String) {
+        print("$game wird fortgesetzt...")
+        println()
+        for (i in 0..3) {
+            print(".")
+            Thread.sleep(1000)
+        }
+        println("")
+    }
 }
+
 
 
 
