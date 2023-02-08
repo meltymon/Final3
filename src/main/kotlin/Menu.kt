@@ -1,9 +1,9 @@
 class Menu {
 
-    private var cc =CharacterCreator()
-    private var saveload= SaveLoad()
-    private var fight= Fight()
-    private var config=Config()
+    private var cc = CharacterCreator()
+    private var saveload = SaveLoad()
+    private var fight = Fight()
+    private var config = Config()
 
     fun run() {
         // Willkommensnachricht anzeigen
@@ -17,9 +17,9 @@ class Menu {
                 1 -> cc.createPlayer()
                 2 -> cc.createEnemy()
                 3 -> showDetails()
-                4 -> fight.fight(cc.players,cc.enemies)
+                4 -> fight.startFight(cc.players, cc.enemies)
                 5 -> saveload.saveCharacters(cc.players, cc.enemies)
-                6 -> cc=saveload.loadCharacters()
+                6 -> cc = saveload.loadCharacters()
                 7 -> break
             }
         }
@@ -37,6 +37,7 @@ class Menu {
         println("* 7 = Programm Beenden                                            *")
         println("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *")
     }
+
     // Zeigt die Details der Spieler und Gegner an
     private fun showDetails() {
         println("* * * * * * * * * * * * * * * * * *")

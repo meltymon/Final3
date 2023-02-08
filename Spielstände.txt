@@ -1,22 +1,17 @@
 Spieler:
-Name: CHris
-Lebensanzeige: 1381
-Stärke: 226
-Verteidigung: 120
-Anzahl Leben: 4
+Name: Chris
+Lebensanzeige: 288
+Stärke: 205
+Verteidigung: 158
+Anzahl Leben: 7
 Name: Kevin
-Lebensanzeige: 277
-Stärke: 207
-Verteidigung: 195
-Anzahl Leben: 4
-Name: Rainer
-Lebensanzeige: 1585
-Stärke: 238
-Verteidigung: 67
-Anzahl Leben: 4
+Lebensanzeige: 182
+Stärke: 244
+Verteidigung: 59
+Anzahl Leben: 7
 
 Gegner:
-Name: Mutiger Mensch
-Lebensanzeige: 1776
-Stärke: 830
-Verteidigung: 196
+Name: Mutiger Untoter
+Lebensanzeige: 1000
+Stärke: 594
+Verteidigung: 158

@@ -21,6 +21,7 @@ class CharacterCreator {
         }
 
     }
+
     fun createPlayer() {
         //Eingabe des Spieler namen
         val player = Player()
@@ -36,6 +37,7 @@ class CharacterCreator {
         enemies.add(enemy)
 
     }
+
     // Liest den Namen des Spielers ein
     private fun readName(): String {
         print("Bitte geben Sie den Namen des Characters ein: ")

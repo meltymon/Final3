@@ -7,7 +7,7 @@ import java.io.File
 
 
 class SaveLoad {
-    private var config=Config()
+    private var config = Config()
 
     // Speichert die Details der Spieler und Gegner
     fun saveCharacters(players: ArrayList<Player>, enemies: ArrayList<Enemy>) {
@@ -42,8 +42,8 @@ class SaveLoad {
     }
 
     // Lädt die Details der Spieler und Gegner
-    fun loadCharacters():CharacterCreator {
-        val cc=CharacterCreator()
+    fun loadCharacters(): CharacterCreator {
+        val cc = CharacterCreator()
         // Ausgabe der Lade Meldung
         println("Laden der Spieler und Gegner aus Spielstände.txt")
         config.schlaf("Game")
@@ -54,7 +54,7 @@ class SaveLoad {
 
         // Spieler details Laden
         var i = 1
-        while (lines[i+1] != "Gegner:") {
+        while (lines[i + 1] != "Gegner:") {
             val player = Player()
             player.name = lines[i].removePrefix("Name: ")
             player.hp = lines[i + 1].removePrefix("Lebensanzeige: ").toInt()
@@ -66,7 +66,7 @@ class SaveLoad {
         }
 
         // Gegner details Laden
-        i+=2
+        i += 2
         while (i < lines.size) {
             val enemy = Enemy()
             enemy.name = lines[i].removePrefix("Name: ")
@@ -76,7 +76,7 @@ class SaveLoad {
             cc.enemies.add(enemy)
             i += 4
         }
-return cc
+        return cc
 
     }
 
