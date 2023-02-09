@@ -1,15 +1,18 @@
 import kotlin.random.Random
 
+// Startet den Kampf zwischen Spieler und Gegner
+private var cf = Config()
+private var ab = Ability()
+private var utl = Utilites()
 class Fight {
-    private var cf = Config()
-    private var ab = Ability()
-    private var utl = Utilites()
 
 
-    // Startet den Kampf zwischen Spieler und Gegner
     private fun fight(players: ArrayList<Player>, enemies: ArrayList<Enemy>) {
         for (player in players) {
             for (enemy in enemies) {
+                if (player.hp <= 0 || enemy.hp <= 0) {
+                    continue
+                }
                 println("\nRunde ${4 - player.leben}")
                 println("Der Kampf zwischen ${player.name} und ${enemy.name} beginnt!")
                 //Fähigkeiten werden aufgerufen
@@ -44,27 +47,30 @@ class Fight {
                         println("Du hast noch ${player.leben} Leben Übrig,deswegen hast du noch eine Weitere Chance")
                         println("Deine Lebenspunkte haben sich um ${player.hp} Erhöht")
                         cf.schlaf("Continue")
-                        fight(players, enemies)
+                        //utl.checkPlayerDeath(player, enemies)
+                        if (enemies.isNotEmpty()) {
+                            fight(players, enemies)
+                        }
                     } else {
                         println("Du hast alle Leben Verloren und das Spiel ist nun Vorbei")
                         cf.schlaf("Game")
-                        utl.checkPlayerDeath(player, enemies)
-                        utl.checkAlive(players, enemies)
-                        utl.checkWinner(players, enemies)
+                        //utl.checkPlayerDeath(player, enemies)
+                        //utl.checkAlive(players, enemies)
+                        //utl.checkWinner(players, enemies)
                         return
                     }
-                    cf.schlaf("Game")
                 }
             }
         }
     }
-
-
     //Aufruf der Funktionen
     fun startFight(players: ArrayList<Player>, enemies: ArrayList<Enemy>) {
         fight(players, enemies)
-        utl.checkAlive(players, enemies)
+
     }
-
-
 }
+
+
+
+
+
