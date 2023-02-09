@@ -1,4 +1,4 @@
-# Basic Kotlin Programming Exam at the Syntax Institut
+# Basic Programming Exam in Kotlin at the Syntax Institut
 # by Christian Faßbender
 
 Character Creator Project With :
