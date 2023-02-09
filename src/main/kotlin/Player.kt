@@ -10,5 +10,5 @@ open class Player {
     open var totalDamage = config.playerTotalDamage
     var leben = config.anzahlLeben
 
-
+//var abilitty:List<Ability> =listOf()
 }
