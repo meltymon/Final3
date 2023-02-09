@@ -57,16 +57,11 @@
   </p>
 </span>
 
-• Have a little patience, this is my first Kotlin program that I wrote completely on my own, and I was busy with it for a good 6 days straight. <br>
+• Have a little patience, this is my first Kotlin program that I wrote completely on my own and I was busy with it for a good 6 days straight. <br>
 • This game is a fun way to immerse yourself in the world of programming and understand the basics of Kotlin. <br>
-• If you have some Questions or Ideas for that Game or Project, write me on <span style="color:blue">meltymon1982@gmail.com</span> <br>
+• If you have some Questions or Ideas for that Game or Project, write me on <a href="https://t.me/meltymon" target="_blank" rel="noopener noreferrer"><span style="color:blue">meltymon1982@gmail.com</span></a> <br>
 • Have Fun With the Game!!! 🤩
 
-<span style="color:blue">
-  <p align="center">
-    <strong>Follow me on:</strong>
-  </p>
-</span>
 <div align="center">
   <a href="https://t.me/meltymon" target="_blank" rel="noopener noreferrer">
     <img alt="Telegram" src="https://img.shields.io/badge/Telegram-@meltymon-blue?style=for-the-badge&logo=telegram" />
