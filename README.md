@@ -3,6 +3,7 @@
 
 Character Creator Project With :
 - Interactive Menu
+- Damage-Meter after Ending Fight !!!
 - Randomize EnemyNames
 - Randomize Character Stats
 - Randomize Use Abilitys
