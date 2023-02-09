@@ -67,10 +67,17 @@
     <strong>Follow me on:</strong>
   </p>
 </span>
-<div>
-  <a href="https://github.com/meltymon" style="background-color: #4CAF50; border: 1px solid #4CAF50; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.svg" width="25px" height="25px" alt=""> GitHub</a>
-  <a href="https://www.xing.com/profile/Christian_Fassbender10/cv" style="background-color: #4CAF50; border: 1px solid #4CAF50; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"><img src="https://cdn.worldvectorlogo.com/logos/xing-2.svg" width="25px" height="25px" alt=""> Xing</a>
-  <a href="https://www.linkedin.com/in/christian-fa%C3%9Fbender-830279215/" style="background-color: #4CAF50; border: 1px solid #4CAF50; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.svg/600px-LinkedIn_logo_initials.svg.png" width="25px" height="25px" alt=""> LinkedIn</a>
-  <a href="https://discord.com/users/918530788113387630" style="background-color: #4CAF50; border: 2px solid #4CAF50; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Discord_icon.svg/1200px-Discord_icon.svg.png" width="25px" height="25px" alt=""> Discord</a>
-  <a href="https://t.me/meltymon" style="background-color: #4CAF50; border: 1px solid #4CAF50; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1200px-Telegram_logo.svg.png" width="25px" height="25px" alt=""> Telegram</a>
+<div align="center">
+  <a href="https://t.me/meltymon" target="_blank" rel="noopener noreferrer">
+    <img alt="Telegram" src="https://img.shields.io/badge/Telegram-@meltymon-blue?style=for-the-badge&logo=telegram" />
+  </a>
+  <a href="https://www.xing.com/profile/Christian_Fassbender10/cv" target="_blank" rel="noopener noreferrer">
+    <img alt="Xing" src="https://img.shields.io/badge/Xing-Christian_Fassbender-red?style=for-the-badge&logo=xing" />
+  </a>
+  <a href="https://www.linkedin.com/in/christian-fa%C3%9Fbender-830279215/" target="_blank" rel="noopener noreferrer">
+    <img alt="Linkedin" src="https://img.shields.io/badge/Linkedin-Christian_Faßbender-blue?style=for-the-badge&logo=linkedin" />
+  </a>
+  <a href="https://discord.gg/918530788113387630" target="_blank" rel="noopener noreferrer">
+    <img alt="Discord" src="https://img.shields.io/badge/Discord-918530788113387630-green?style=for-the-badge&logo=discord" />
+  </a>
 </div>
