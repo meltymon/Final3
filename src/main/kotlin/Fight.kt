@@ -1,8 +1,8 @@
 import kotlin.random.Random
 
 // Startet den Kampf zwischen Spieler und Gegner
-private var cf = Config()
-private var ab = Ability()
+private var config = Config()
+private var ability = Ability()
 private var utl = Utilites()
 
 class Fight {
@@ -18,10 +18,11 @@ class Fight {
                         continue
 
                     }*/
-                    println("\nRunde ${1 + cf.anzahlLeben - player.leben}")
+                    println("\nRunde ${1 + config.anzahlLeben - player.leben}")
                     println("Der Kampf zwischen ${player.name} und ${enemy.name} beginnt!")
+
                     //Fähigkeiten werden aufgerufen
-                    ab.useAbility(player, enemy)
+                    ability.useAbility(player, enemy)
 
                     while (player.hp > 0 && enemy.hp > 0) {
                         //Überprüft ob der Spieler oder der Gegener gestorben ist
@@ -31,12 +32,12 @@ class Fight {
 
                         val damagePlayer = utl.calculateDamage(player.strength, enemy.defense, player, enemy)
                         enemy.hp -= damagePlayer
-                        cf.schlaf("Game")
+                        config.schlaf("Game")
                         println("${player.name} hat ${enemy.name} $damagePlayer Schaden zugefügt!")
                         if (enemy.hp > 0) {
                             val damageEnemy = utl.calculateDamage(enemy.strength, player.defense, enemy, player)
                             player.hp -= damageEnemy
-                            cf.schlaf("Game")
+                            config.schlaf("Game")
                             println("${enemy.name} hat ${player.name} $damageEnemy Schaden zugefügt!")
                         }
                     }
@@ -44,7 +45,7 @@ class Fight {
                     if (player.hp > 0) {
                         println("\n${player.name} hat ${enemy.name} besiegt!")
                         enemy.leben--
-                        cf.schlaf("Game")
+                        config.schlaf("Game")
                     } else {
                         println("\n${enemy.name} hat ${player.name} besiegt!")
                         player.leben--
@@ -52,13 +53,13 @@ class Fight {
                             player.hp = (Random.nextInt(100, 500))
                             println("Du hast noch ${player.leben} Leben Übrig,deswegen hast du noch eine Weitere Chance")
                             println("Deine Lebenspunkte haben sich um ${player.hp} Erhöht")
-                            cf.schlaf("Continue")
+                            config.schlaf("Continue")
                             //if (enemies.isNotEmpty()) {
                             //fight(players, enemies)
                             //}
                         } else {
                             println("Du hast alle Leben Verloren und das Spiel ist nun Vorbei")
-                            cf.schlaf("Game")
+                            config.schlaf("Game")
                             utl.damageMeters(players, enemies)
                             return
                         }

@@ -46,8 +46,8 @@ class CharacterCreator {
 
     // Generiert den Namen des Gegners
     private fun generateName(): String {
-        val adjectives = listOf("Böser ", "Mutiger ", "Starker ", "Furchtloser ", "Hinterhältiger ")
-        val nouns = listOf("Ork", "Elf", "Zwerg", "Mensch", "Untoter")
+        val adjectives = listOf("Böser ", "Hinterhältiger ", "Gemeiner ", "Teuflischer ", "2Face ")
+        val nouns = listOf("Ork", "Blut-Elf", "Tauren", "Untoter", "Troll")
         val adjective = adjectives.random()
         val noun = nouns.random()
         println("Der Gegner Heißt '${adjective}${noun}'")

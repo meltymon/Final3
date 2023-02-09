@@ -41,6 +41,8 @@ class Menu {
     // Zeigt die Details der Spieler und Gegner an
     private fun showDetails() {
         println("* * * * * * * * * * * * * * * * * *")
+        println("*** Players ***")
+        config.schlaf("Menu")
         println("\nDetails der Spieler:")
         for (player in cc.players) {
             println("Name: ${player.name}")
@@ -51,7 +53,9 @@ class Menu {
             println()
 
         }
-        config.schlaf("Game")
+        config.sleep("Spiel")
+        println("*** Enemies ***")
+        config.schlaf("Menu")
         println("\nDetails der Gegner:")
         for (enemy in cc.enemies) {
             println("Name: ${enemy.name}")
@@ -59,7 +63,10 @@ class Menu {
             println("Stärke: ${enemy.strength}")
             println("Verteidigung: ${enemy.defense}")
             println()
+
         }
 
+
     }
+
 }

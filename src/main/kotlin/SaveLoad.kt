@@ -1,7 +1,7 @@
 //SaveLoad.kt
 //enthält Funktionen für das Speichern und Laden von Dateien
 
-@file:Suppress("DuplicatedCode", "DuplicatedCode")
+
 
 import java.io.File
 
@@ -13,7 +13,7 @@ class SaveLoad {
     fun saveCharacters(players: ArrayList<Player>, enemies: ArrayList<Enemy>) {
         // Ausgabe der Speichermeldung
         println("Speichern der Spieler und Gegner in Spielstände.txt")
-        config.schlaf("Game")
+        config.sleep("Speichern")
 
         // Öffnen einer Datei zum Schreiben
         val file = File("Spielstände.txt")
@@ -46,7 +46,7 @@ class SaveLoad {
         val cc = CharacterCreator()
         // Ausgabe der Lade Meldung
         println("Laden der Spieler und Gegner aus Spielstände.txt")
-        config.schlaf("Game")
+        config.sleep("Laden")
 
         // Öffnen einer Datei zum Lesen
         val file = File("Spielstände.txt")

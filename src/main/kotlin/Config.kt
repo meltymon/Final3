@@ -15,16 +15,15 @@ open class Config {
     //Funktion Schlaf zum Delay Setzen
     fun schlaf(typ: String) {
         when (typ) {
-            "Menu" -> Thread.sleep(1800)
-            "Game" -> Thread.sleep(2500)
-            "Continue" -> Thread.sleep(3000)
+            "Menu" -> Thread.sleep(1500)
+            "Game" -> Thread.sleep(1800)
+            "Continue" -> Thread.sleep(2000)
         }
     }
 
     // Verzögert die Ausführung
     fun sleep(game: String) {
         print("$game wird fortgesetzt...")
-        println()
         for (i in 0..3) {
             print(".")
             Thread.sleep(1000)

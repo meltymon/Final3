@@ -1,37 +1,101 @@
 Spieler:
 Name: Chris
-Lebensanzeige: 733
-Stärke: 213
-Verteidigung: 198
-Anzahl Leben: 3
-Name: Thomas
-Lebensanzeige: 712
-Stärke: 225
-Verteidigung: 150
+Lebensanzeige: 514
+Stärke: 218
+Verteidigung: 197
 Anzahl Leben: 3
 Name: Kevin
-Lebensanzeige: 595
-Stärke: 203
-Verteidigung: 160
+Lebensanzeige: 678
+Stärke: 228
+Verteidigung: 180
 Anzahl Leben: 3
-Name: Janis
-Lebensanzeige: 689
-Stärke: 246
-Verteidigung: 152
+Name: Gordon
+Lebensanzeige: 613
+Stärke: 237
+Verteidigung: 197
 Anzahl Leben: 3
-Name: Elsa
-Lebensanzeige: 651
-Stärke: 232
-Verteidigung: 154
+Name: Marvin
+Lebensanzeige: 675
+Stärke: 234
+Verteidigung: 185
 Anzahl Leben: 3
-Name: Kirby
-Lebensanzeige: 660
-Stärke: 208
-Verteidigung: 154
+Name: Lars
+Lebensanzeige: 670
+Stärke: 219
+Verteidigung: 167
+Anzahl Leben: 3
+Name: Lisa
+Lebensanzeige: 567
+Stärke: 241
+Verteidigung: 187
+Anzahl Leben: 3
+Name: Sedat
+Lebensanzeige: 519
+Stärke: 237
+Verteidigung: 174
+Anzahl Leben: 3
+Name: Abdul
+Lebensanzeige: 542
+Stärke: 205
+Verteidigung: 164
+Anzahl Leben: 3
+Name: Mirel
+Lebensanzeige: 590
+Stärke: 204
+Verteidigung: 163
+Anzahl Leben: 3
+Name: Fetullah
+Lebensanzeige: 682
+Stärke: 205
+Verteidigung: 181
+Anzahl Leben: 3
+Name: Maja
+Lebensanzeige: 708
+Stärke: 202
+Verteidigung: 178
+Anzahl Leben: 3
+Name: Can
+Lebensanzeige: 671
+Stärke: 218
+Verteidigung: 153
+Anzahl Leben: 3
+Name: Martin
+Lebensanzeige: 530
+Stärke: 221
+Verteidigung: 174
+Anzahl Leben: 3
+Name: Marius
+Lebensanzeige: 715
+Stärke: 228
+Verteidigung: 184
 Anzahl Leben: 3
 
 Gegner:
-Name: Mutiger Untoter
-Lebensanzeige: 1112
-Stärke: 249
-Verteidigung: 160
+Name: Gemeiner Untoter
+Lebensanzeige: 1144
+Stärke: 234
+Verteidigung: 196
+Name: Hinterhältiger Ork
+Lebensanzeige: 1022
+Stärke: 243
+Verteidigung: 189
+Name: 2Face Ork
+Lebensanzeige: 1006
+Stärke: 221
+Verteidigung: 175
+Name: Böser Tauren
+Lebensanzeige: 1124
+Stärke: 241
+Verteidigung: 198
+Name: Hinterhältiger Blut-Elf
+Lebensanzeige: 1170
+Stärke: 245
+Verteidigung: 164
+Name: Gemeiner Tauren
+Lebensanzeige: 1098
+Stärke: 227
+Verteidigung: 179
+Name: Hinterhältiger Tauren
+Lebensanzeige: 1213
+Stärke: 204
+Verteidigung: 181
