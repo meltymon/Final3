@@ -9,7 +9,7 @@ class CharacterCreator {
 
     // Liest die Option des Benutzers ein
     fun readOption(): Int {
-        print("Ihre Option:")
+        print("Ihre Option: ")
         val input = readln()
         //Abfangen von Exceptions
         return try {
