@@ -1,5 +1,5 @@
 import kotlin.random.Random
-
+//Configurations KLasse ,wo alle Characterwerte und Delay Timers Konfiguriert werden
 open class Config {
     var anzahlLeben = 3
     var playerHp = Random.nextInt(500, 750)
@@ -15,6 +15,7 @@ open class Config {
     //Funktion Schlaf zum Delay Setzen
     fun schlaf(typ: String) {
         when (typ) {
+            //Unterschiedliche Verzögerungstimer je nach Anwendungszweck
             "Menu" -> Thread.sleep(1500)
             "Game" -> Thread.sleep(1800)
             "Continue" -> Thread.sleep(2000)

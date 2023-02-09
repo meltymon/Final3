@@ -4,7 +4,7 @@ private var config = Config()
 
 open class Ability {
 
-
+    //Definition von Fähigkeiten die Zufällig gewählt Werden
     open fun useAbility(player: Player, enemy: Enemy) {
         when (Random.nextInt(1, 3)) {
             1 -> {

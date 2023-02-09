@@ -55,11 +55,7 @@ class CharacterCreator {
         return "$adjective$noun"
     }
 
-    /*fun calculateDamage(strength: Int, defense: Int): Int {
-        // Generiert zufällig Stärke und Verteidigung
-        //generateRandomStrengthAndDefense()
-        return strength - defense
-    }*/
+
 }
 
 
