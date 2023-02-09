@@ -2,13 +2,13 @@ import kotlin.random.Random
 
 open class Config {
     var anzahlLeben = 3
-    var playerHp = Random.nextInt(100, 2000)
+    var playerHp = Random.nextInt(500, 750)
     var playerStrength = Random.nextInt(200, 250)
-    var playerDefense = Random.nextInt(10, 200)
+    var playerDefense = Random.nextInt(150, 200)
     var playerTotalDamage: Int = 0
 
-    var enemyHp = Random.nextInt(100, 2000)
-    var enemyStrength = Random.nextInt(500, 1000)
+    var enemyHp = Random.nextInt(1000, 1250)
+    var enemyStrength = Random.nextInt(200, 250)
     var enemyDefense = Random.nextInt(150, 200)
     var ememyTotalDamage: Int = 0
 

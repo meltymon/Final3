@@ -1,0 +1,37 @@
+Spieler:
+Name: Chris
+Lebensanzeige: 733
+Stärke: 213
+Verteidigung: 198
+Anzahl Leben: 3
+Name: Thomas
+Lebensanzeige: 712
+Stärke: 225
+Verteidigung: 150
+Anzahl Leben: 3
+Name: Kevin
+Lebensanzeige: 595
+Stärke: 203
+Verteidigung: 160
+Anzahl Leben: 3
+Name: Janis
+Lebensanzeige: 689
+Stärke: 246
+Verteidigung: 152
+Anzahl Leben: 3
+Name: Elsa
+Lebensanzeige: 651
+Stärke: 232
+Verteidigung: 154
+Anzahl Leben: 3
+Name: Kirby
+Lebensanzeige: 660
+Stärke: 208
+Verteidigung: 154
+Anzahl Leben: 3
+
+Gegner:
+Name: Mutiger Untoter
+Lebensanzeige: 1112
+Stärke: 249
+Verteidigung: 160

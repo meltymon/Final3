@@ -11,12 +11,13 @@ class Fight {
     private fun fight(players: ArrayList<Player>, enemies: ArrayList<Enemy>) {
         for (player in players) {
             for (enemy in enemies) {
-                while (player.leben > 0 && enemy.leben > 0) {
+                while (player.leben > 0 && enemy.hp > 0) {
 
 
-                    if (player.hp <= 0 || enemy.hp <= 0) {
+                  /*  if (player.hp <= 0 || enemy.hp <= 0) {
                         continue
-                    }
+
+                    }*/
                     println("\nRunde ${1 + cf.anzahlLeben - player.leben}")
                     println("Der Kampf zwischen ${player.name} und ${enemy.name} beginnt!")
                     //Fähigkeiten werden aufgerufen
