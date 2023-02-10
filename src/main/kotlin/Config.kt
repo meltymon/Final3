@@ -17,7 +17,7 @@ open class Config {
         when (typ) {
             //Unterschiedliche Verzögerungstimer je nach Anwendungszweck
             "Menu" -> Thread.sleep(1500)
-            "Game" -> Thread.sleep(1800)
+            "Game" -> Thread.sleep(1200)
             "Continue" -> Thread.sleep(2000)
         }
     }

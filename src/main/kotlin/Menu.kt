@@ -53,7 +53,7 @@ class Menu {
             println()
 
         }
-        config.sleep("Spiel")
+        config.sleep("Menu")
         println("*** Enemies ***")
         config.schlaf("Menu")
         println("\nDetails der Gegner:")
